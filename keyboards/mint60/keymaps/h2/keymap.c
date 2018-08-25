@@ -71,13 +71,20 @@ enum custom_keycodes {
  * Q  W  U  S  G       /  M  D  N  P
  *  A  E  I  O  Z       B  F  K  R  T
  *   \  X  C  V  ,       Y  H  J  L  .
+ *
+ * // HJKLをQWERTYに
+ * // B F R
+ *
+ * Q  W  U  S  G       /  M  D  N  P
+ *  A  E  I  O  Z       H  J  K  L  T
+ *   \  X  C  V  ,       Y  B  F  R  .
  */
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT( \
     KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,      KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,    KC_BSPC,  \
     KC_TAB,    KC_Q,    KC_W,    KC_U,    KC_S,    KC_G,   KC_SLASH,    KC_M,    KC_D,    KC_N,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS,  \
-    KC_LCTL,     KC_A,    KC_E,    KC_I,    KC_O,    KC_Z,      KC_B,    KC_F,    KC_K,    KC_R,    KC_T,    KC_QUOT,        KC_ENT,   \
-    KC_LSFT,       KC_BSLASH,    KC_X,    KC_C,    KC_V,    KC_COMM,      KC_Y,    KC_H,    KC_J,    KC_L,    KC_DOT, KC_SCOLON,   KC_UP,  MO(1),   \
+    KC_LCTL,     KC_A,    KC_E,    KC_I,    KC_O,    KC_Z,      KC_H,    KC_J,    KC_K,    KC_L,    KC_T,    KC_QUOT,        KC_ENT,   \
+    KC_LSFT,       KC_BSLASH,    KC_X,    KC_C,    KC_V,    KC_COMM,      KC_Y,    KC_B,    KC_F,    KC_R,    KC_DOT, KC_SCOLON,   KC_UP,  MO(1),   \
     KC_ESC,    KC_BSPACE,    KC_LGUI,    KC_LALT,    KC_SPC,        KC_RSFT, KC_ENT,  LALT(KC_GRV),               KC_LEFT,KC_DOWN,KC_RGHT \
   ),
   [1] = LAYOUT( \
